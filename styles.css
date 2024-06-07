@@ -713,17 +713,20 @@ ul > li {
 }
 
 .carousel-item {
-    /*min-width: 50%; /* Adjusted to show adjacent items */
-    min-width: 45%; /* Adjusted to show adjacent items with a gap */
-    margin: 0 2.5%; /* Add margin to create gaps between items */
-    transition: transform 0.5s ease, opacity 0.5s ease, filter 0.2s;
+    min-width: 45%; 
+    margin: 0 2.5%; 
+    transition: transform 0.5s ease, opacity 0.5s ease;
     opacity: 0.5;
-    border-radius: 20px;
     transform: scale(0.7);
     cursor: pointer;
+}
+.carousel-image {
+    width: 100%;
+    border-radius: 20px;
+    transition: filter 0.2s;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
-.carousel-item:hover {
+.carousel-image:hover {
     filter: drop-shadow(0 0 10px rgb(255, 255, 255));
 }
 .carousel-item.zoom {
